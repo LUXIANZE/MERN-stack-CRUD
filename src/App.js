@@ -3,9 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const greeting = 'Hello'
+  const name = 'LU XIANZE'
   return (
     <div className="App">
-      <h1>React App intro</h1>
+      <h1>{greeting}, {name}!</h1>
     </div>
   );
 }
