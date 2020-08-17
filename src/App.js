@@ -6,9 +6,16 @@ function App() {
 
   const greeting = 'Hello'
   const name = 'LU XIANZE'
+
+  function greet(greeting, name){
+    return greeting + ", " + name + "!"
+  }
+
+
   return (
     <div className="App">
       <h1>{greeting}, {name}!</h1>
+      <h1>{greet(greeting, name)}</h1>
     </div>
   );
 }
