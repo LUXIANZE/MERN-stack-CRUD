@@ -50,18 +50,21 @@ const urlStyle = {
   textDecoration: 'none',
   color: 'green'
 }
+// CSS styles within this section
 
+// Functions within this section
 function greet(greeting, name){
   return greeting + ", " + name + "!"
 }
-// CSS styles within this section
+// Functions within this section
 
 // React Component within this section
 function App() {
   return (
     <div style={wrapprStyle}>
       <h1>List of items with JSX</h1>
-      <hr></hr>
+      <hr/>
+
       <CourseList courses={courses} urlStyle={urlStyle} listStyle={listStyle}/>
     </div>
   );
