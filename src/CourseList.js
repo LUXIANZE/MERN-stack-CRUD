@@ -1,16 +1,34 @@
 import React from 'react';
 
-function CourseList(props){
+// Typical function as component:
+// 
+// function CourseList(props){
+//     return props.courses.map( (course) => {
+//       return (
+//       <div key={course.id} style={props.listStyle}>
+//         <h3>{course.title}</h3>
+//         <span>Author: {course.author}</span>
+//         <br/>
+//         <a href={course.url} style={props.urlStyle}>URL: {course.url}</a>
+//       </div>
+//       )
+//     })
+//   }
+
+
+// Arrow function as component
+// 
+const CourseList = (props) => {
     return props.courses.map( (course) => {
       return (
-      <div key={course.id} style={props.listStyle}>
-        <h3>{course.title}</h3>
-        <span>Author: {course.author}</span>
-        <br/>
-        <a href={course.url} style={props.urlStyle}>URL: {course.url}</a>
-      </div>
+        <div key={course.id} style={props.listStyle}>
+            <h3>{course.title}</h3>
+            <span>Author: {course.author}</span>
+            <br/>
+            <a href={course.url} style={props.urlStyle}>URL: {course.url}</a>
+        </div>
       )
     })
-  }
+}
 
 export default CourseList;

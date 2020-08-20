@@ -47,7 +47,8 @@ const listStyle = {
 }
 
 const urlStyle = {
-  textDecoration: "none"
+  textDecoration: 'none',
+  color: 'green'
 }
 
 function greet(greeting, name){
