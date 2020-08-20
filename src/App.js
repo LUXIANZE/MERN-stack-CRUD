@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import CourseList from './CourseList';
 import './App.css';
 
 
@@ -61,23 +61,12 @@ function App() {
     <div style={wrapprStyle}>
       <h1>List of items with JSX</h1>
       <hr></hr>
-      <CourseList/>
+      <CourseList courses={courses} urlStyle={urlStyle} listStyle={listStyle}/>
     </div>
   );
 }
 
-function CourseList(){
-  return courses.map( (course) => {
-    return (
-    <div key={course.id} style={listStyle}>
-      <h3>{course.title}</h3>
-      <span>Author: {course.author}</span>
-      <br/>
-      <a href={course.url} style={urlStyle}>URL: {course.url}</a>
-    </div>
-    )
-  })
-}
+
 // React Component within this section
 
 export default App;
