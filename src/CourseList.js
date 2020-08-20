@@ -18,14 +18,14 @@ import React from 'react';
 
 // Arrow function as component
 // 
-const CourseList = (props) => {
-    return props.courses.map( (course) => {
+const CourseList = ({courses, listStyle, urlStyle}) => {
+    return courses.map( (course) => {
       return (
-        <div key={course.id} style={props.listStyle}>
+        <div key={course.id} style={listStyle}>
             <h3>{course.title}</h3>
             <span>Author: {course.author}</span>
             <br/>
-            <a href={course.url} style={props.urlStyle}>URL: {course.url}</a>
+            <a href={course.url} style={urlStyle}>URL: {course.url}</a>
         </div>
       )
     })
